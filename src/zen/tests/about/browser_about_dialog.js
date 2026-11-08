@@ -82,7 +82,7 @@ add_task(async function test_about_links() {
 
   is(
     doc.getElementById("zen-about-donate").href,
-    "https://www.zen-browser.app/donate",
+    "https://synapse-humanform.vercel.app",
     "Donate link points at the donation page"
   );
   is(

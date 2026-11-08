@@ -1,8 +1,8 @@
 {
-  "name": "Zen Browser",
-  "vendor": "Zen OSS Team",
-  "appId": "zen",
-  "binaryName": "zen",
+  "name": "SYNAPSE Browser",
+  "vendor": "HumanForm Studios",
+  "appId": "synapse",
+  "binaryName": "synapse",
   "version": {
     "product": "firefox",
     "version": "159.0.1",
@@ -15,14 +15,14 @@
   "addons": {},
   "brands": {
     "release": {
-      "backgroundColor": "#282A33",
-      "brandShorterName": "Zen",
-      "brandShortName": "Zen",
-      "brandFullName": "Zen Browser",
+      "backgroundColor": "#000000",
+      "brandShorterName": "SYNAPSE",
+      "brandShortName": "SYNAPSE",
+      "brandFullName": "SYNAPSE Browser",
       "release": {
-        "displayVersion": "1.24.1b",
+        "displayVersion": "1.0.0",
         "github": {
-          "repo": "zen-browser/desktop"
+          "repo": "TrueVeX/synapse-browser"
         },
         "archives": {
           "windows": "windows.mar",
@@ -53,5 +53,5 @@
     ],
     "licenseType": "MPL-2.0"
   },
-  "updateHostname": "updates.zen-browser.app"
+  "updateHostname": "synapse-humanform.vercel.app"
 }
