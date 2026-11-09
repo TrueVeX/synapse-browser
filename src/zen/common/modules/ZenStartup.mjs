@@ -27,30 +27,8 @@ class ZenStartup {
   }
 
   init() {
-    this.#useSynapseHomePage();
     this.openWatermark();
     this.#zenInitBrowserLayout();
-  }
-
-  /**
-   * SYNAPSE: new tabs open the SYNAPSE home page (a static search page with no
-   * scripts). Turn it off with the synapse.newtab.home pref.
-   */
-  #useSynapseHomePage() {
-    const url = "chrome://browser/content/synapse-home/home.html";
-    try {
-      if (!Services.prefs.getBoolPref("synapse.newtab.home", true)) {
-        return;
-      }
-      const { AboutNewTab } = ChromeUtils.importESModule(
-        "resource:///modules/AboutNewTab.sys.mjs"
-      );
-      if (AboutNewTab.newTabURL !== url) {
-        AboutNewTab.newTabURL = url;
-      }
-    } catch (e) {
-      console.error("SYNAPSE: could not set the new-tab page", e);
-    }
   }
 
   get #shouldUseWatermark() {

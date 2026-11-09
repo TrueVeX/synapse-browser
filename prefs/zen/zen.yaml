@@ -5,17 +5,6 @@
 - name: zen.tabs.vertical
   value: true
 
-# SYNAPSE: tabs across the top of the window (address bar and bookmarks below).
-- name: synapse.tabs.top
-  value: true
-
-# SYNAPSE: new tabs and the home button open the SYNAPSE home page.
-- name: synapse.newtab.home
-  value: true
-
-- name: browser.startup.homepage
-  value: "chrome://browser/content/synapse-home/home.html"
-
 - name: zen.tabs.vertical.right-side
   value: false
 
@@ -50,7 +39,7 @@
   value: true
 
 - name: zen.startup.smooth-scroll-in-tabs
-  value: true
+  value: false
 
 - name: zen.tabs.open-pinned-in-new-tab
   value: true
@@ -64,9 +53,12 @@
 - name: zen.tabs.ctrl-tab.ignore-pending-tabs
   value: false
 
+# SYNAPSE Browser: fewer animations for higher FPS on low-power PCs
+- name: ui.prefersReducedMotion
+  value: 1
 
 - name: toolkit.cosmeticAnimations.enabled
-  value: true 
+  value: false
 
 # SYNAPSE Browser: keep RAM low (fewer content processes, early tab unloading, small caches)
 - name: dom.ipc.processCount

@@ -21,5 +21,4 @@ so run `synapse\synapse.exe`.
 ## SYNAPSE defaults
 - Branding: `configs/branding/release` (logos), `surfer.json` (name, vendor, version)
 - Low RAM: `prefs/zen/zen.yaml` sets 2 content processes, no preloading, early tab unloading and small caches
-- Look: tabs on top, liquid-glass styling and light animations (`src/zen/tabs/synapse-top-tabs.css`); no Windows Mica blur
-- Home and new-tab page: `src/zen/synapse-home/` (static page, no scripts); pref `synapse.newtab.home`
+- Fewer animations: reduced motion, no Windows Mica blur, shorter transitions

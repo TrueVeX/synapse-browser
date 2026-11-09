@@ -289,13 +289,6 @@ window.gZenVerticalTabsManager = {
     );
     XPCOMUtils.defineLazyPreferenceGetter(
       this,
-      "_prefsSynapseTopTabs",
-      "synapse.tabs.top",
-      false,
-      updateEvent
-    );
-    XPCOMUtils.defineLazyPreferenceGetter(
-      this,
       "_prefsUseSingleToolbar",
       "zen.view.use-single-toolbar",
       false,
@@ -423,44 +416,27 @@ window.gZenVerticalTabsManager = {
         gZenCompactModeManager.preference && !forCustomizableMode;
       const isVerticalTabs = this._prefsVerticalTabs || forCustomizableMode;
       const isSidebarExpanded = this._prefsSidebarExpanded || !isVerticalTabs;
-      // SYNAPSE: tabs across the top of the window, above the address bar.
-      const isTopTabs =
-        this._prefsSynapseTopTabs &&
-        this._prefsVerticalTabs &&
-        !forCustomizableMode &&
-        !isCompactMode;
-      const isRightSide =
-        this._prefsRightSide && isVerticalTabs && !isTopTabs;
+      const isRightSide = this._prefsRightSide && isVerticalTabs;
       const isSingleToolbar =
         ((this._prefsUseSingleToolbar && isVerticalTabs && isSidebarExpanded) ||
           !isVerticalTabs) &&
-        !isTopTabs &&
         !forCustomizableMode &&
         !this.hidesTabsToolbar;
       const titlebar = document.getElementById("titlebar");
 
-      const tabsOrient =
-        isVerticalTabs && !isTopTabs ? "vertical" : "horizontal";
-      document.documentElement.toggleAttribute("synapse-top-tabs", isTopTabs);
-      gBrowser.tabContainer.setAttribute("orient", tabsOrient);
-      gBrowser.tabContainer.arrowScrollbox.setAttribute("orient", tabsOrient);
+      gBrowser.tabContainer.setAttribute(
+        "orient",
+        isVerticalTabs ? "vertical" : "horizontal"
+      );
+      gBrowser.tabContainer.arrowScrollbox.setAttribute(
+        "orient",
+        isVerticalTabs ? "vertical" : "horizontal"
+      );
       // on purpose, we set the orient to horizontal, because the arrowScrollbox is vertical
       gBrowser.tabContainer.arrowScrollbox.scrollbox.setAttribute(
         "orient",
-        tabsOrient
+        isVerticalTabs ? "vertical" : "horizontal"
       );
-      // SYNAPSE: each space has its own tab list; keep them all in the same direction.
-      for (const strip of document.querySelectorAll(
-        "#tabbrowser-arrowscrollbox, zen-workspace .workspace-arrowscrollbox"
-      )) {
-        strip.setAttribute("orient", tabsOrient);
-        strip.scrollbox?.setAttribute("orient", tabsOrient);
-      }
-      if (isTopTabs) {
-        topButtons.removeAttribute("flex");
-      } else {
-        topButtons.setAttribute("flex", "1");
-      }
 
       const buttonsTarget = document.getElementById(
         "zen-sidebar-top-buttons-customization-target"
