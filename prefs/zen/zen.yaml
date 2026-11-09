@@ -98,10 +98,10 @@
   value: false
 
 - name: network.dns.disablePrefetch
-  value: true
+  value: false
 
 - name: network.predictor.enabled
-  value: false
+  value: true
 
 - name: extensions.pocket.enabled
   value: false
