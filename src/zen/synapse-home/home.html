@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- SYNAPSE home and new-tab page. No scripts: the search box is a plain form. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="color-scheme" content="dark" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src chrome:; img-src chrome:; form-action https://www.google.com" />
+  <title>New Tab</title>
+  <link rel="icon" href="chrome://browser/content/synapse-home/mark.svg" />
+  <link rel="stylesheet" href="chrome://browser/content/synapse-home/home.css" />
+</head>
+<body>
+  <div class="glow glow--a"></div>
+  <div class="glow glow--b"></div>
+  <div class="glow glow--c"></div>
+
+  <header class="top">
+    <nav class="links">
+      <a href="https://synapse-browser.vercel.app">About</a>
+      <a href="https://synapse-humanform.vercel.app">SYNAPSE AI</a>
+    </nav>
+    <nav class="links">
+      <a href="https://mail.google.com">Gmail</a>
+      <a href="https://images.google.com">Images</a>
+    </nav>
+  </header>
+
+  <main class="center">
+    <h1 class="brand">
+      <img class="brand__mark" src="chrome://browser/content/synapse-home/mark.svg" alt="" />
+      <span class="brand__word">SYNAPSE</span>
+    </h1>
+
+    <form class="search" action="https://www.google.com/search" method="get" role="search">
+      <label class="search__pill">
+        <svg class="search__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><line x1="15.5" y1="15.5" x2="21" y2="21" /></svg>
+        <input class="search__input" type="search" name="q" autocomplete="off" autofocus
+               placeholder="Search Google" aria-label="Search Google" />
+      </label>
+      <div class="actions">
+        <button class="glass-btn" type="submit">Google Search</button>
+        <button class="glass-btn" type="submit" name="btnI" value="1">I’m Feeling Lucky</button>
+      </div>
+    </form>
+
+    <p class="tagline">Welcome To A Lighter Internet</p>
+  </main>
+
+  <footer class="foot">
+    <nav class="links">
+      <a href="https://synapse-browser.vercel.app">SYNAPSE Browser</a>
+      <a href="https://buymeacoffee.com/ashwathrevoori">Support</a>
+      <a href="https://github.com/TrueVeX/synapse-browser">Source code</a>
+    </nav>
+    <nav class="links">
+      <a href="about:preferences#privacy">Privacy</a>
+      <a href="about:preferences">Settings</a>
+    </nav>
+  </footer>
+</body>
+</html>

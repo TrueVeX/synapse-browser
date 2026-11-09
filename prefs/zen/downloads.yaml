@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 - name: zen.downloads.download-animation
-  value: false
+  value: true
 
 - name: zen.downloads.download-animation-duration
   value: 1000 # ms
