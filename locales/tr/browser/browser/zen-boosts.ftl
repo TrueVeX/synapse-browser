@@ -55,7 +55,7 @@ zen-boost-receive-by = Gönderen
 zen-boost-receive-info = 
     .tooltiptext = Bu Boost hakkında
 zen-boost-receive-info-text = Boost oluşturucu adları doğrulanmamıştır. Boost'lar CSS ve görsel filtreler kullanarak bir sayfanın görünümünü değiştirebilir. Kod çalıştıramaz veya verilerinizi hiçbir yere gönderemezler. Bu Boost yalnızca şu adreste çalışacaktır: { $domain }.
-zen-boost-receive-title = Bu Boost Zen'e eklensin mi?
+zen-boost-receive-title = Bu Boost SYNAPSE'e eklensin mi?
 # The span carries the Library icon in front of the word.
 zen-boost-receive-description = Deneyin! <span data-l10n-name="library">Kitaplık</span> bölümünden istediğiniz zaman geri dönebilirsiniz.
 zen-boost-received-toast = Boost eklendi!

@@ -55,7 +55,7 @@ zen-boost-receive-by = le
 zen-boost-receive-info = 
     .tooltiptext = Maidir leis an Treisiú seo
 zen-boost-receive-info-text = Ní dhéantar fíorú ar ainmneacha cruthaitheoirí 'Boosts'. Is féidir le 'Boosts' cuma leathanaigh a athrú trí úsáid a bhaint as CSS agus scagairí amhairc. Ní féidir leo cód a rith ná do chuid sonraí a sheoladh áit ar bith. Ní rithfidh an 'Boost' seo ach ar { $domain }.
-zen-boost-receive-title = Cuir an Treisiú seo le Zen?
+zen-boost-receive-title = Cuir an Treisiú seo le SYNAPSE?
 # The span carries the Library icon in front of the word.
 zen-boost-receive-description = Bain triail as! Is féidir leat filleadh i gcónaí ón <span data-l10n-name="library">Leabharlann</span>.
 zen-boost-received-toast = Treisiú curtha leis!

@@ -1,11 +1,3 @@
-<!--
-   - This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
-   -->
+# Security
 
-# Security Policy
-
-## Reporting a Vulnerability
-
-Please report security vulnerabilities [here](https://github.com/zen-browser/desktop/security/advisories/new)
+Please report security issues privately to HumanForm Studios via https://synapse-humanform.vercel.app.

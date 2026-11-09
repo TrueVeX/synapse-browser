@@ -1,30 +1,24 @@
-# SYNAPSE Browser
+# Building SYNAPSE Browser
 
-SYNAPSE Browser is made by HumanForm Studios (Revoori Ashwath Reddy). It is a rebranded build of
-[Zen Browser](https://github.com/zen-browser/desktop), which is itself built on Mozilla Firefox.
-The source is under the Mozilla Public License 2.0 (see `LICENSE`), and every MPL-2.0 header has been kept.
-"Zen" and "Firefox" are the names of the upstream projects. SYNAPSE Browser uses its own name and logo.
+SYNAPSE Browser by HumanForm Studios (Revoori Ashwath Reddy) is built on the Firefox engine.
+It is licensed under the Mozilla Public License 2.0, and the MPL-2.0 file headers must stay in place.
 
-## What changed from Zen
-- `surfer.json`: name "SYNAPSE Browser", vendor "HumanForm Studios", binary `synapse.exe`, version 1.0.0.
-- `configs/branding/release/`: SYNAPSE logos and icons, made from the SYNAPSE app icon.
-- `configs/common/mozconfig`: app basename SYNAPSE, distribution id `com.humanformstudios.synapse`.
-- `prefs/zen/theme.yaml`: black-and-white accent (`#ffffff`).
-- en-US UI strings and the About dialog name SYNAPSE and HumanForm Studios, with credit to Zen and Firefox.
-- The update host is `synapse-humanform.vercel.app`, so the browser never downloads Zen's updates.
-  There are no SYNAPSE update packages yet, so update checks just fail quietly.
-
-## Build (Windows x64, on GitHub Actions)
-Actions tab → "SYNAPSE Windows Build" → Run workflow. You can also start it from a terminal:
+## Windows x64 on GitHub Actions
+Go to Actions → "SYNAPSE Windows Build" → Run workflow, or run:
 
     gh workflow run synapse-windows-build.yml --repo TrueVeX/synapse-browser --ref dev
 
-The build takes about 3–6 hours on a free runner. When it finishes, the run's artifacts include
-`synapse-browser-win64-zip` (a portable zip) and `synapse-browser-setup-exe` (an installer).
+The build takes about 3–6 hours. Download the `synapse-browser-win64-zip` artifact; it is portable,
+so run `synapse\synapse.exe`.
 
-## Build locally (needs a strong PC: 16 GB+ RAM, 8+ cores, about 60 GB of free disk)
+## Local build (16 GB+ RAM, 8+ cores, about 60 GB free)
     npm i
     npm run init
     python3 ./scripts/update_en_US_packs.py
     npm run build
     npm start
+
+## SYNAPSE defaults
+- Branding: `configs/branding/release` (logos), `surfer.json` (name, vendor, version)
+- Low RAM: `prefs/zen/zen.yaml` sets 2 content processes, no preloading, early tab unloading and small caches
+- Fewer animations: reduced motion, no Windows Mica blur, shorter transitions

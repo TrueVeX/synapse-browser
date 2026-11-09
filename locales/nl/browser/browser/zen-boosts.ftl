@@ -55,7 +55,7 @@ zen-boost-receive-by = door
 zen-boost-receive-info = 
     .tooltiptext = Over deze Boost
 zen-boost-receive-info-text = Auteurs van Boosts zijn ongeverifieerd. Boosts kunnen het uiterlijk van een pagina veranderen door middel van CSS en visuele filters. Ze kunnen geen code uitvoeren en je data niet versturen. Deze Boost werkt alleen op { $domain }.
-zen-boost-receive-title = Deze Boost aan Zen toevoegen?
+zen-boost-receive-title = Deze Boost aan SYNAPSE toevoegen?
 # The span carries the Library icon in front of the word.
 zen-boost-receive-description = Probeer het uit! Je kunt altijd terugschakelen naar hoe het was via de <span data-l10n-name="library">Bibliotheek</span>.
 zen-boost-received-toast = Boost toegevoegd!

@@ -33,18 +33,6 @@
           "linux-aarch64": "linux-aarch64.mar"
         }
       }
-    },
-    "twilight": {
-      "backgroundColor": "#282A33",
-      "brandShorterName": "Zen",
-      "brandShortName": "Twilight",
-      "brandFullName": "Zen Twilight",
-      "release": {
-        "displayVersion": "1.25t",
-        "github": {
-          "repo": "zen-browser/desktop"
-        }
-      }
     }
   },
   "license": {

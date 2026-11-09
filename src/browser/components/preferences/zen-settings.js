@@ -248,7 +248,7 @@ var gZenMarketplaceManager = {
 
       fp.init(
         window.browsingContext,
-        "Export Zen Mods",
+        "Export SYNAPSE Mods",
         nsIFilePicker.modeSave
       );
       fp.defaultString = "zen-mods-export";

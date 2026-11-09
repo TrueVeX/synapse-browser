@@ -58,7 +58,7 @@ zen-about-release-notes = What’s new
 zen-about-donate = HumanForm Studios
 zen-about-report-issue = Report an issue
 
-zen-about-community = { -brand-short-name } by HumanForm Studios (Revoori Ashwath Reddy). Free and open source under the MPL-2.0, based on <a data-l10n-name="github-link">Zen Browser</a> and { -zen-engine-name }.
+zen-about-community = { -brand-short-name } by <a data-l10n-name="github-link">HumanForm Studios</a> (Revoori Ashwath Reddy). Free and open source under the MPL-2.0, built on { -zen-engine-name }.
 zen-about-license = License
 zen-about-rights = Your rights
 zen-about-privacy = Privacy

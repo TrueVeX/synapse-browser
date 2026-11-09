@@ -55,7 +55,7 @@ zen-boost-receive-by = per
 zen-boost-receive-info = 
     .tooltiptext = Quant a aquesta millora
 zen-boost-receive-info-text = Els noms dels creadors de millores no estan verificats. Les millores poden modificar l'aspecte d'una pàgina mitjançant CSS i filtres visuals. No poden executar codi ni enviar les vostres dades enlloc. Aquesta millora només s'executarà a { $domain }.
-zen-boost-receive-title = Voleu afegir aquesta millora al Zen?
+zen-boost-receive-title = Voleu afegir aquesta millora al SYNAPSE?
 # The span carries the Library icon in front of the word.
 zen-boost-receive-description = Proveu-ho! Sempre podeu tornar enrere des de la <span data-l10n-name="library">Biblioteca</span>.
 zen-boost-received-toast = Millora afegida!

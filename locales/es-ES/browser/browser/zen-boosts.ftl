@@ -55,7 +55,7 @@ zen-boost-receive-by = por
 zen-boost-receive-info = 
     .tooltiptext = Acerca de este Boost
 zen-boost-receive-info-text = Los nombres del creador del Boost no están verificados. Los Boosts pueden cambiar cómo se ve una página usando CSS y filtros visuales. No pueden ejecutar código ni enviar tus datos a cualquier parte. Este Boost solo se ejecutará en { $domain }.
-zen-boost-receive-title = ¿Añadir este Boost a Zen?
+zen-boost-receive-title = ¿Añadir este Boost a SYNAPSE?
 # The span carries the Library icon in front of the word.
 zen-boost-receive-description = ¡Pruébelo! Siempre puede volver a cambiarlo desde la <span data-l10n-name="library">biblioteca</span>.
 zen-boost-received-toast = ¡Boost añadido!
