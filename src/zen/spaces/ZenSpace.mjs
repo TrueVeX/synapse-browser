@@ -69,7 +69,7 @@ export class nsZenWorkspace extends MozXULElement {
           <label class="zen-current-workspace-indicator-name" />
           <toolbarbutton class="toolbarbutton-1 chromeclass-toolbar-additional zen-workspaces-actions" context="zenWorkspaceMoreActions" />
         </vbox>
-        <arrowscrollbox orient="vertical" class="workspace-arrowscrollbox">
+        <arrowscrollbox orient="${document.documentElement.hasAttribute("synapse-top-tabs") ? "horizontal" : "vertical"}" class="workspace-arrowscrollbox">
           <vbox class="zen-workspace-tabs-section zen-workspace-pinned-tabs-section" hide-separator="true">
             <html:div class="zen-tab-group-start space-fake-collapsible-start" style="order: -9999;" />
             <hbox class="pinned-tabs-container-separator">

@@ -5,6 +5,10 @@
 - name: zen.tabs.vertical
   value: true
 
+# SYNAPSE: tabs across the top of the window (address bar and bookmarks below).
+- name: synapse.tabs.top
+  value: true
+
 - name: zen.tabs.vertical.right-side
   value: false
 

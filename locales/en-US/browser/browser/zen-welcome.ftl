@@ -4,7 +4,7 @@
 
 zen-welcome-title-line1 = Welcome To
 zen-welcome-title-line2 = A Lighter Internet
-zen-welcome-credit = Created by Revoori Ashwath Reddy at HumanForm Studios, using Zen Browser’s open-source code
+zen-welcome-credit = Created by Revoori Ashwath Reddy at HumanForm Studios
 
 zen-welcome-back = Back
 zen-welcome-skip = Skip for now
