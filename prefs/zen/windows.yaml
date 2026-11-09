@@ -4,7 +4,7 @@
 
 # Mica effect preferences for Windows
 - name: widget.windows.mica
-  value: true
+  value: false
   condition: "defined(XP_WIN)"
 
 # 1 = DWMSBT_MAINWINDOW

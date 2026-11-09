@@ -29,7 +29,7 @@
   value: 100
 
 - name: zen.view.compact.animate-sidebar
-  value: true
+  value: false
 
 - name: zen.view.compact.show-sidebar-and-toolbar-on-hover
   value: true

@@ -39,7 +39,7 @@
   value: true
 
 - name: zen.startup.smooth-scroll-in-tabs
-  value: true
+  value: false
 
 - name: zen.tabs.open-pinned-in-new-tab
   value: true
@@ -51,4 +51,11 @@
   value: false
 
 - name: zen.tabs.ctrl-tab.ignore-pending-tabs
+  value: false
+
+# SYNAPSE Browser: fewer animations for higher FPS on low-power PCs
+- name: ui.prefersReducedMotion
+  value: 1
+
+- name: toolkit.cosmeticAnimations.enabled
   value: false
