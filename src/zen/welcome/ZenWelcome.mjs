@@ -87,6 +87,7 @@
       <html:div id="zen-welcome">
         <html:div id="zen-welcome-start">
           <html:h1 id="zen-welcome-title"></html:h1>
+          <html:p id="zen-welcome-credit" data-l10n-id="zen-welcome-credit"></html:p>
           <button class="footer-button primary" id="zen-welcome-start-button">
           </button>
         </html:div>
@@ -960,7 +961,7 @@
       "click",
       async () => {
         await animate(
-          "#zen-welcome-title .zen-welcome-char, #zen-welcome-start-button",
+          "#zen-welcome-title .zen-welcome-char, #zen-welcome-credit, #zen-welcome-start-button",
           { opacity: [1, 0], y: [0, -14] },
           {
             duration: 0.3,
@@ -973,7 +974,7 @@
       { once: true }
     );
     await animate(
-      button,
+      [document.getElementById("zen-welcome-credit"), button],
       { opacity: [0, 1], y: [20, 0], filter: ["blur(2px)", "blur(0px)"] },
       {
         delay: 0.1,
