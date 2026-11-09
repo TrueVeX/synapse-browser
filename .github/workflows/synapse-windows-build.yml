@@ -142,8 +142,12 @@ jobs:
           ls -la ./dist
           mkdir -p out
           cp "$(ls ./dist/*.en-US.win64.zip | head -n1)" out/synapse-browser-win64.zip
-          INSTALLER="$(ls ./dist/*installer*.exe 2>/dev/null | head -n1)"
-          if [ -n "$INSTALLER" ]; then cp "$INSTALLER" out/synapse-browser-setup.exe; fi
+          # Ship the FULL offline installer, never the *-stub / *.pretty.exe one
+          # (the stub downloads the browser from upstream servers).
+          INSTALLER=./dist/synapse.installer.exe
+          SIZE=$(stat -c %s "$INSTALLER")
+          if [ "$SIZE" -lt 50000000 ]; then echo "Installer is only $SIZE bytes: not the full installer" >&2; exit 1; fi
+          cp "$INSTALLER" out/synapse-browser-setup.exe
 
       - name: Upload portable zip
         uses: actions/upload-artifact@v4
@@ -154,8 +158,7 @@ jobs:
 
       - name: Upload installer
         uses: actions/upload-artifact@v4
-        if: ${{ hashFiles('out/synapse-browser-setup.exe') != '' }}
-        with:
+                with:
           name: synapse-browser-setup-exe
           path: out/synapse-browser-setup.exe
           retention-days: 14
